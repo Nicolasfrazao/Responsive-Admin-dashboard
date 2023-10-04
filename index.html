@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Responsive Admin Dashboard with theme</title>
+  <title>Admin Dashboard</title>
 </head>
 
 <body>
-
+  <!-- Sidebar-->
     <div class="sidebar">
-
       <a href="#" class="logo">
         <i class='bx bx-code-alt' ></i>
         <div class="logo-name"><span>Admin</span>Dash</div>
       </a>
       <ul class="side-menu">
-        <li><a href="#"><i class='bx bxs-dashboard' ></i></a></li>
+        <li><a href="#"><i class='bx bxs-dashboard' ></i>Dashboard</a></li>
         <li><a href="#"><i class='bx bx-store-alt' ></i>Shop</a></li>
-        <li class="active"><a href="#" ><i class='bx bx-analyse' ></i>Analytics</a></li>
+        <li class="active"><a href="#" ><i class='bx bx-analyze' ></i>Analytics</a></li>
         <li><a href="#"><i class='bx bx-message-square-dots' ></i>Tickets</a></li>
         <li><a href="#"><i class='bx bx-group' ></i>Users</a></li>
         <li><a href="#"><i class='bx bx-cog' ></i>Settings</a></li>
@@ -34,8 +33,10 @@
         </li>
       </ul>
     </div>
-
+    <!-- End of sidebar-->
+    <!-- Main-->
     <div class="content">
+      <!--Nav-->
       <nav>
         <i class='bx bx-menu' ></i>
         <form action="#">
@@ -54,7 +55,66 @@
           <img src="images/logo.png">
         </a>
       </nav>
+      <!-- End of Nav-->
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li><a href="#">
+                Analytics
+              </a></li>
+              /
+              <li><a  href="#" class="active">Shop</a></li>
+            </ul>
+          </div>
+          <a href="#" class="report">
+            <i class="bx bx-cloud-download"></i>
+            <span>Download CSV</span>
+          </a>
+        </div>
+        <!--Insights-->
+        <ul class="insights">
+          <li>
+            <i class="bx bx-calendar-check"></i>
+            <span class="info">
+              <h3>
+                7,539
+              </h3>
+              <p>Paid Order</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-show"></i>
+            <span class="info">
+            <h3>
+              50,207
+            </h3>
+            <p> Site Visit </p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-line-chart"></i>
+            <span class="info">
+              <h3>
+                73,104
+              </h3>
+              <p>Search</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-dollar-circle"></i>
+            <span class="info">
+              <h3>
+                $27,204
+              </h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+        <!--END of insights-->
 
+      </main>
       
     </div>
 
