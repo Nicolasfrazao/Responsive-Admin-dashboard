@@ -552,3 +552,17 @@ body {
 .content main .bottom-data .reminders .task-list li .completed {
   border-left: 10px solid var(--success);
 }
+
+.content main .bottom-data .reminders .task-list li.not-completed {
+  border-left: 10px solid var(--danger);
+}
+
+.content main .bottom-data .reminders .task-list li:last-child {
+  margin-bottom: 10px solid var(--success);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+}
